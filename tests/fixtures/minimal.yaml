@@ -1,0 +1,14 @@
+# Synthetic fixture: the smallest valid brief, with no competitors.
+product: Tinyform
+description: Tinyform is a form builder for static sites.
+audience: Developers who host static sites
+updated: 2026-07-01
+entities:
+  - name: Tinyform
+    definition: Tinyform is a hosted backend that receives form posts from static sites.
+claims:
+  - text: Tinyform accepts 1,000 submissions per month on the free plan.
+    source: Tinyform pricing page
+faq:
+  - question: What is Tinyform?
+  - question: Does Tinyform store submissions forever?

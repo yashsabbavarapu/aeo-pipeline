@@ -1,0 +1,56 @@
+# Synthetic fixture. Clearpond and its competitors are fictional, as are the
+# sources. The shape is what matters: every claim carries its source.
+product: Clearpond
+url: https://clearpond.example.com
+description: Clearpond automates bank reconciliation and month-end close for venture-backed startups.
+audience: Startup finance leads and fractional controllers
+updated: 2026-09-15
+
+entities:
+  - name: Clearpond
+    definition: Clearpond is a reconciliation tool that matches bank transactions to ledger entries for startups.
+  - name: Bank reconciliation
+    definition: Bank reconciliation is the process of matching every bank transaction to a recorded ledger entry.
+  - name: Month-end close
+    definition: Month-end close is the set of accounting steps that finalize a company's books for the month.
+  - name: General ledger
+    definition: A general ledger is the master record of every financial transaction a company has booked.
+
+claims:
+  - text: Clearpond auto-matches 92% of bank transactions without manual review.
+    source: Clearpond customer data, Q2 2026, 140 companies
+  - text: Customers report closing their books 6 days faster on average.
+    source: Clearpond customer survey, July 2026, n=88
+  - text: Clearpond holds a SOC 2 Type II report.
+    source: Example Audit LLP attestation, 2026
+    url: https://clearpond.example.com/trust
+  - text: Clearpond syncs with QuickBooks Online and Xero through their public APIs.
+    source: Clearpond integration docs
+    url: https://clearpond.example.com/docs/integrations
+
+attributes:
+  Auto-match rate: 92% (vendor reported)
+  Ledger integrations: QuickBooks Online, Xero
+  SOC 2 Type II: "Yes"
+  Pricing model: Flat monthly fee by transaction volume
+
+competitors:
+  - name: Tallyforge
+    attributes:
+      Ledger integrations: QuickBooks Online, NetSuite
+      SOC 2 Type II: "Yes"
+      Pricing model: Per-entity pricing
+  - name: Recontra
+    attributes:
+      Ledger integrations: Xero
+      Pricing model: Percentage of transaction volume
+
+faq:
+  - question: What is Clearpond?
+  - question: What is bank reconciliation?
+  - question: Which accounting systems does Clearpond work with?
+    answer: Clearpond works with QuickBooks Online and Xero today.
+  - question: Is Clearpond secure enough for audited startups?
+    answer: Clearpond holds a SOC 2 Type II report, available on request from its trust page.
+  - question: How long does setup take?
+    answer: Most teams connect their bank feeds and ledger in a single afternoon, then review the first matched month.

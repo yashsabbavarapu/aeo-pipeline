@@ -1,0 +1,57 @@
+# Synthetic fixture. Spanlens and its competitors are fictional, as are the
+# sources. The shape is what matters: every claim carries its source.
+product: Spanlens
+url: https://spanlens.example.com
+description: Spanlens is a local-first trace debugger that lets engineers replay OpenTelemetry traces on their laptop without sending data to a vendor.
+audience: Backend and platform engineers who debug distributed systems
+updated: 2026-10-01
+
+entities:
+  - name: Spanlens
+    definition: Spanlens is a local-first debugger that replays OpenTelemetry traces on a developer laptop.
+  - name: OpenTelemetry
+    definition: OpenTelemetry is an open standard and toolkit for collecting traces, metrics, and logs from software.
+  - name: Trace replay
+    definition: Trace replay is the practice of re-running a recorded request path step by step to find where it failed.
+  - name: Local-first
+    definition: Local-first describes software that keeps the primary copy of your data on your own machine instead of a vendor server.
+
+claims:
+  - text: Spanlens loads a 50,000-span trace in under 2 seconds on a 2023 laptop.
+    source: Spanlens internal benchmark, September 2026
+    url: https://spanlens.example.com/benchmarks
+  - text: Teams in the design-partner program cut median time-to-root-cause from 47 minutes to 18 minutes.
+    source: Spanlens design-partner study, n=12 teams
+  - text: Spanlens was rated the fastest setup among trace debuggers in the survey.
+    source: 2026 Example DevTools Survey
+  - text: Spanlens reads any OTLP export, so no code changes are required to start.
+    source: OpenTelemetry OTLP specification
+    url: https://opentelemetry.io/docs/specs/otlp/
+
+attributes:
+  Deployment: Runs locally on macOS, Linux, Windows
+  Data leaves your machine: "No"
+  OpenTelemetry native: "Yes"
+  Pricing model: Free for individuals, per-seat for teams
+
+competitors:
+  - name: Spantrail Cloud
+    attributes:
+      Deployment: Hosted SaaS
+      Data leaves your machine: "Yes"
+      OpenTelemetry native: "Yes"
+  - name: Ochre APM
+    attributes:
+      Deployment: Hosted SaaS or self-hosted cluster
+      Data leaves your machine: Depends on deployment
+      Pricing model: Usage-based
+
+faq:
+  - question: What is Spanlens?
+  - question: Does Spanlens send my trace data to the cloud?
+    answer: No. Spanlens reads traces from local OTLP files or a local collector, and nothing is uploaded.
+  - question: How is Spanlens different from a hosted APM?
+    answer: A hosted APM stores your traces on its servers for dashboards and alerts. Spanlens is a debugger that keeps traces on your machine and focuses on replaying one request at a time.
+  - question: Do I need to change my instrumentation to use Spanlens?
+    answer: No. If your services already emit OpenTelemetry data, Spanlens can read it as is.
+  - question: What is trace replay?
